@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-brand navbar-brand-centered">Soft Corp.</div>
+        <div class="navbar-brand navbar-brand-centered"><a href="<%= root_path %>">Soft Corp.</a></div>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,7 +16,7 @@
         <ul class="nav navbar-nav">
           <li><a href="#">Link</a></li>
           <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-            Dropdown<span class="caret"></span></a>
+            Contact<span class="caret"></span></a>
             <ul class="dropdown-menu"> 
               <li><a href="#">Action</a></li> 
               <li><a href="#">Another action</a></li> 
@@ -27,7 +27,7 @@
             </ul>
           </li>
           <li><a href="#">Link</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><%= link_to 'Blog', blog_articles_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Link</a></li>

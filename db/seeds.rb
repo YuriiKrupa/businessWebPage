@@ -10,6 +10,7 @@ User.where(email: 'admin@admin.com').first_or_create! do |u|
   u.email ||= "admin@admin.com"
  # u.name ||= "admin"
   u.password = "123qwe"
+  u.role = "admin"
   #u.confirmed_at = DateTime.current
 
 end
