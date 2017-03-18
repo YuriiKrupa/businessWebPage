@@ -1,0 +1,24 @@
+<!-- Wrapper for slides -->
+<div class="carousel-inner banner" role="listbox">
+  <% Article.last(4).each do |a| %>
+    <% if a == Article.last %>
+      <div class="item active">
+    <% else %>
+      <div class="item">
+    <% end %>
+      <div class="col-sm-6 col-sm-offset-1 slide">
+        <h1><%= a.title %></h1>
+        <h2><%= a.body %></h2>
+        
+        <%= link_to 'READ MORE', article_path(a), class: 'bunner btn btn-primary' %>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  <% end -%>
+</div>
+
+ <div class="control-box">
+    <a data-slide="prev" href="#myCarousel" class="carousel-control left"><span class="fa fa-angle-double-left"></span></a>
+    <a data-slide="next" href="#myCarousel" class="carousel-control right">  <span class="fa fa-angle-double-right"></span></a>
+  </div>
+  <!-- /.control-box -->   

@@ -1,0 +1,29 @@
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+      <li data-target="#myCarousel2" data-slide-to="3"></li>
+    </ol>
+
+    <% Testimonial.last(4).each do |t| %>
+      <% if t == Testimonial.last %>
+        <div class="item active">
+      <% else %>
+        <div class="item">
+      <% end %>
+
+        <div class="col-sm-12">
+          <div class="circle col-sm-2">
+            <img src="http://www.revlocal.com/Files/images/Portraits/jfalvo_200_(2).jpg" "<%#= t.avatar.url(:thumb) %>" class="img-circle img-responsive">
+          </div>
+          <h2><%= t.author %></h2>
+          <p><%= t.body %> <br/> <small><b><%= t.company %></b></small></p>
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+  </div>

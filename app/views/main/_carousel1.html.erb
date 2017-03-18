@@ -1,0 +1,32 @@
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <% BlogArticle.last(4).each do |a| %>
+        <% if a == BlogArticle.last %>
+          <div class="item active">
+        <% else %>
+          <div class="item">
+        <% end %>
+          <div class="col-sm-12">
+              
+              <h2><b><%= a.title %></b></h2>
+
+              <img src="<%= a.image.url(:blogMain) %>"  class="img-responsive">
+
+              <h2><span class="fa fa-calendar"></span><%= " "+a.created_at.to_date.to_s+" " %><!--<span class="fa fa-comment"></span> No Comment --></h2>
+              <p><%= strip_tags(a.content.first(425))+"... " %>   
+              <%= link_to 'READ MORE', blog_article_path(a)%>
+              </p>
+
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="control-box1">                            
+      <a data-slide="prev" href="#myCarousel1" class="carousel-control left"><span class="fa fa-angle-double-left"></span></a>
+      <a data-slide="next" href="#myCarousel1" class="carousel-control right"><span class="fa fa-angle-double-right"></span></a>
+    </div>
+  <!-- /.control-box -->   
+
+  </div>
