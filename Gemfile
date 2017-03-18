@@ -57,4 +57,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 # DEVISE
 gem 'devise'
+# CARRIERWAVE
+gem 'carrierwave', '~> 1.0'
+# MINI_MAGICK
+gem "mini_magick"
 
+gem 'trix'

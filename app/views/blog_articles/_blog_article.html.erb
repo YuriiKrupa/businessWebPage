@@ -20,12 +20,12 @@ figure img{
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
         <article>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <figure>
-                        <img src="http://usbcode.ir/wp-content/uploads/2017/03/bootstrap.jpg">
+                        <img src="<%= blog_article.image.url(:blogThumb) %>">
                     </figure>
                 </div>
                 <div class="col-sm-6 col-md-8">
@@ -34,10 +34,9 @@ figure img{
                     <p><%= blog_article.content %></p>
                     <section>
                         <i class="glyphicon glyphicon-folder-open"></i>Bootstrap
-                        <i class="glyphicon glyphicon-user"><%= blog_article.author %></i>
+                        <i class="glyphicon glyphicon-user"> <%= blog_article.author %></i>
                         <i class="glyphicon glyphicon-calendar">
                         <%= blog_article.created_at.to_date %></i>
-                        <i class="glyphicon glyphicon-eye-open"></i>10000
                         <%= link_to 'More details', blog_article_path(blog_article), class: 'btn btn-default btn-sm pull-right' %>
                     </section>
                 </div>

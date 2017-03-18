@@ -1,4 +1,9 @@
+/*
+*= require trix
+*/
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -45,6 +50,7 @@ hr{width:100%;background-color:#999;margin:5px 0px;}
 .slide p{font-family: 'Open Sans', sans-serif; font-size:14px;color:#000; text-align:left; padding:15px; font-weight:400;  margin-bottom:20px;}
 .slide h1{font-family: 'Oswald', sans-serif; color:#FFF;  margin:0px;text-align:left; padding:30px; margin:70px 0 20px 0; background-color:#0f8bd1;}
 .slide button{border:none;border-radius:0px;padding:15px 25px; font-family: 'Oswald', sans-serif; font-size:14px; margin-bottom:50px;}
+.slide a.bunner{border:none;border-radius:0px;padding:15px 25px; font-family: 'Oswald', sans-serif; font-size:14px; margin-bottom:50px;}
 
 
 /*banner*/
