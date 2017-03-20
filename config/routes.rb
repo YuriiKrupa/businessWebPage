@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   resources :blog_articles
   resources :articles
 
-  get 'contact_us', to:'static#contact_us'
+  resources :contact_us#, only: [:new, :create]
+  #resources :contact_form, only: [:new, :create]
+
+  #resources :contact_form
+#  get 'callback', to:'contact_us#new'
 end
