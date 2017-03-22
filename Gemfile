@@ -35,6 +35,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# DEVISE
+gem 'devise'
+# CARRIERWAVE
+gem 'carrierwave', '~> 1.0'
+# MINI_MAGICK
+gem "mini_magick"
+
+gem 'trix'
+
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -54,12 +65,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass', '~> 3.3.6'
 #gem 'sass-rails', '>= 3.2'
-
-# DEVISE
-gem 'devise'
-# CARRIERWAVE
-gem 'carrierwave', '~> 1.0'
-# MINI_MAGICK
-gem "mini_magick"
-
-gem 'trix'

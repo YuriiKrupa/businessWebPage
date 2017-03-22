@@ -6,10 +6,10 @@ Rails.application.routes.draw do
 
   resources :blog_articles
   resources :articles
-
-  resources :contact_us#, only: [:new, :create]
+  resources :contacts, only: [:new, :create]
+  #resources :contact_us#, only: [:new, :create]
   #resources :contact_form, only: [:new, :create]
 
   #resources :contact_form
-#  get 'callback', to:'contact_us#new'
+  #get 'callback', to:'contact_us#new'
 end

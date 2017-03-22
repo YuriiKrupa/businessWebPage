@@ -1,0 +1,58 @@
+<div class="container">
+  <form class="well" role="form">
+    <div class="row">
+      <h1 class="text-center">Contact Us</h1><br>
+      <div class="col-md-4">
+        <%= form_for @contact do |f| -%>
+          <div class="form-group">
+            <%= f.label :full_name %>
+            <%= f.text_field :name, required: true, class: 'form-control', placeholder: 'How call you' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, required: true, class: 'form-control', placeholder: 'example@mail.com' %>
+          </div>
+          
+          <div class="hidden form-group">
+            <%= f.label :nickname %>
+            <%= f.text_area :nickname, hint: 'Leave this field blank', class: 'form-control' %>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="form-group">
+            <%= f.label :message %>
+            <%= f.text_area :message, as: :text, class: 'form-control', placeholder: 'Your message', rows: "7" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.submit "Send Message", class: 'btn btn-success btn-lg btn-block' %>
+          </div>
+        <% end -%>
+
+      </div>
+
+
+      <br><hr><br>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="col-md-8">
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.8101633129895!2d24.709012566804745!3d48.91900898226628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16ae2f37afb%3A0x2a00a9870320ef62!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINGB0YLRgNGW0LvRjNGG0ZbQsiwgMjMsINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LosINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1489920806532"></iframe>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Snail mail</h2>
+            <address>
+              <strong>Extim City business center</strong><br>
+              Sichovych Strilciv, 23 street<br>
+              Ukraine<br>
+              Ivano-Frankivsk<br>
+              <abbr title="Phone number">Phone:</abbr> +38 (011) 44 55 777
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
