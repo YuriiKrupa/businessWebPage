@@ -6,10 +6,10 @@ class ContactFormsController < InheritedResources::Base
 
   def create
     @contact_form = ContactForm.new(contact_form_params)
-    unless @contact_form.save
-      render :new
+    if @contact_form.save
+      render :submit
     else
-      redirect_to @contact_form
+      render :new
     end
   end
 
