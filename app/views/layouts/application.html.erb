@@ -11,7 +11,7 @@
 <body>
   
   <%= render "layouts/header" %>
-  <p class="notice"><%= notice %></p>
+  <!-- <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   
   <ul>
@@ -19,20 +19,20 @@
     <li>
       <%= link_to "#{current_user.email}", edit_user_registration_path, class: 'nav-link' %> 
     </li>   
-
+  
     <li>
       <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: 'nav-link' %> 
     </li>        
-
+  
     <% else %>
-
+  
     <li>
       <%= link_to "Sign in", new_user_session_path, class: 'nav-link' %> 
     </li>
-
+  
     <% end %>
-  </ul>
-
+  </ul> -->
+  <br><br>
   <%= yield %>
 
   <%= render "layouts/footer" %>

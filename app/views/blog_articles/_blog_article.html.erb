@@ -1,21 +1,20 @@
 <style type="text/css">
     article{
-    background-color: #E0E0E0;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-figure img{
-    width: 100%;
-    height: 100%;
-}
-.glyphicon-folder-open,
-.glyphicon-user,
-.glyphicon-calendar,
-.glyphicon-eye-open,
-.glyphicon-comment{
-    padding: 5px;
-}
+        background-color: #E0E0E0;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .glyphicon-folder-open,
+    .glyphicon-user,
+    .glyphicon-calendar,
+    .glyphicon-eye-open,
+    .glyphicon-comment{
+        padding: 5px;
 </style>
 
 <div class="container">
@@ -36,13 +35,13 @@ figure img{
                         <i class="glyphicon glyphicon-folder-open"></i>Bootstrap
                         <i class="glyphicon glyphicon-user"> <%= blog_article.author %></i>
                         <i class="glyphicon glyphicon-calendar">
-                        <%= blog_article.created_at.to_date %></i>
-                        <%= link_to 'More details', blog_article_path(blog_article), class: 'btn btn-default btn-sm pull-right' %>
-                    </section>
+                            <%= blog_article.created_at.to_date %></i>
+                            <%= link_to 'More details', blog_article_path(blog_article), class: 'btn btn-default btn-sm pull-right' %>
+                        </section>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
+        </div>
     </div>
-  </div>
 </div>

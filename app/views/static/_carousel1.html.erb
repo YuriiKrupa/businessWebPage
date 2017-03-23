@@ -11,10 +11,10 @@
               
               <h2><b><%= a.title %></b></h2>
 
-              <img src="<%= a.image.url(:blogMain) %>"  class="img-responsive">
+              <img src="<%= a.image.url(:blogMain) %>"  class="img-responsive" style="width:540px;height:180px;">
 
               <h2><span class="fa fa-calendar"></span><%= " "+a.created_at.to_date.to_s+" " %><!--<span class="fa fa-comment"></span> No Comment --></h2>
-              <p><%= strip_tags(a.content.first(425))+"... " %>   
+              <p><%= strip_tags(a.content.first(200))+"... " %>   
               <%= link_to 'READ MORE', blog_article_path(a)%>
               </p>
 
