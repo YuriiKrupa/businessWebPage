@@ -4,8 +4,10 @@ Also on Heroky
 
 https://ancient-plateau-89465.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Credential for admin panel
+  Login:    admin@mail.com
+  Password: password
+
 
 Things you may want to cover:
 
@@ -16,10 +18,8 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
-
-* Database initialization
-
-* How to run the test suite
+  rails db:create
+  rails db:setup
 
 * Services (job queues, cache servers, search engines, etc.)
 
