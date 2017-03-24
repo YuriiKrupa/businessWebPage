@@ -10,6 +10,6 @@ class ContactFormMailer < ApplicationMailer
     @contact = contact
 
     mail to: @contact.email, subject: "Your message recieved"
-    mail to: 'yurii.krupa.dev@gmail.com', subject: "New contact application recieved"
+    #mail to: 'yurii.krupa.dev@gmail.com', subject: "New contact application recieved"
   end
 end
