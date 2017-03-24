@@ -8,6 +8,7 @@ class ContactFormsController < InheritedResources::Base
     @contact_form = ContactForm.new(contact_form_params)
     if @contact_form.save
       render :submit
+      ContactFormMailer.contact_form_recieved(@contact_form).deliver
     else
       render :new
     end
